@@ -1,0 +1,144 @@
+0 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'i', 'randomstring' ]
+1 info using npm@8.1.4
+2 info using node@v14.18.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 4ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 12ms
+6 timing config:load:builtin Completed in 12ms
+7 timing config:load:cli Completed in 8ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 4ms
+10 timing config:load:file:/home/container/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 2ms
+14 timing config:load:validate Completed in 0ms
+15 timing config:load:credentials Completed in 6ms
+16 timing config:load:setEnvs Completed in 4ms
+17 timing config:load Completed in 41ms
+18 timing npm:load:configload Completed in 42ms
+19 timing npm:load:setTitle Completed in 0ms
+20 timing npm:load:setupLog Completed in 2ms
+21 timing config:load:flatten Completed in 11ms
+22 timing npm:load:cleanupLog Completed in 9ms
+23 timing npm:load:configScope Completed in 0ms
+24 timing npm:load:projectScope Completed in 2ms
+25 timing npm:load Completed in 71ms
+26 timing arborist:ctor Completed in 2ms
+27 timing idealTree:init Completed in 435ms
+28 timing idealTree:userRequests Completed in 9ms
+29 silly idealTree buildDeps
+30 silly fetch manifest randomstring@*
+31 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+32 http fetch GET 200 https://registry.npmjs.org/randomstring 428ms (cache hit)
+33 silly placeDep ROOT randomstring@1.2.1 OK for: whybolu@1.0.0 want: *
+34 silly fetch manifest array-uniq@1.0.2
+35 silly fetch manifest randombytes@2.0.3
+36 http fetch GET 200 https://registry.npmjs.org/randombytes 97ms (cache hit)
+37 http fetch GET 200 https://registry.npmjs.org/array-uniq 102ms (cache hit)
+38 timing idealTree:#root Completed in 550ms
+39 silly placeDep ROOT array-uniq@1.0.2 OK for: randomstring@1.2.1 want: 1.0.2
+40 silly placeDep ROOT randombytes@2.0.3 OK for: randomstring@1.2.1 want: 2.0.3
+41 timing idealTree:node_modules/randomstring Completed in 8ms
+42 timing idealTree:node_modules/array-uniq Completed in 0ms
+43 timing idealTree:node_modules/randombytes Completed in 0ms
+44 timing idealTree:buildDeps Completed in 561ms
+45 timing idealTree:fixDepFlags Completed in 13ms
+46 timing idealTree Completed in 1039ms
+47 timing reify:loadTrees Completed in 1041ms
+48 timing reify:diffTrees Completed in 22ms
+49 silly reify mark retired [ '/home/container/node_modules/agent-base' ]
+50 silly reify mark retired [ '/home/container/node_modules/buffer-from' ]
+51 silly reify mark retired [
+51 silly reify   '/home/container/node_modules/color-support',
+51 silly reify   '/home/container/node_modules/.bin/color-support'
+51 silly reify ]
+52 silly reify mark retired [ '/home/container/node_modules/concat-stream' ]
+53 silly reify mark retired [ '/home/container/node_modules/discord-music-system' ]
+54 silly reify mark retired [ '/home/container/node_modules/encoding' ]
+55 silly reify mark retired [ '/home/container/node_modules/env-paths' ]
+56 silly reify mark retired [ '/home/container/node_modules/ffmpeg-static' ]
+57 silly reify mark retired [
+57 silly reify   '/home/container/node_modules/he',
+57 silly reify   '/home/container/node_modules/.bin/he'
+57 silly reify ]
+58 silly reify mark retired [
+58 silly reify   '/home/container/node_modules/html-to-text',
+58 silly reify   '/home/container/node_modules/.bin/html-to-text'
+58 silly reify ]
+59 silly reify mark retired [ '/home/container/node_modules/http-response-object' ]
+60 silly reify mark retired [ '/home/container/node_modules/https-proxy-agent' ]
+61 silly reify mark retired [
+61 silly reify   '/home/container/node_modules/lyrics-finder',
+61 silly reify   '/home/container/node_modules/.bin/lyrics-finder'
+61 silly reify ]
+62 silly reify mark retired [ '/home/container/node_modules/make-dir' ]
+63 silly reify mark retired [ '/home/container/node_modules/node-addon-api' ]
+64 silly reify mark retired [ '/home/container/node_modules/parse-cache-control' ]
+65 silly reify mark retired [ '/home/container/node_modules/popyt' ]
+66 silly reify mark retired [ '/home/container/node_modules/prism-media' ]
+67 silly reify mark retired [ '/home/container/node_modules/progress' ]
+68 silly reify mark retired [ '/home/container/node_modules/tr46' ]
+69 silly reify mark retired [ '/home/container/node_modules/typedarray' ]
+70 silly reify mark retired [ '/home/container/node_modules/webidl-conversions' ]
+71 silly reify mark retired [ '/home/container/node_modules/whatwg-url' ]
+72 silly reify mark retired [ '/home/container/node_modules/ytpl' ]
+73 silly reify mark retired [ '/home/container/node_modules/ytdl-core-discord' ]
+74 silly reify mark retired [ '/home/container/node_modules/@derhuerst/http-basic' ]
+75 silly reify mark retired [
+75 silly reify   '/home/container/node_modules/@discordjs/node-pre-gyp',
+75 silly reify   '/home/container/node_modules/.bin/node-pre-gyp'
+75 silly reify ]
+76 silly reify mark retired [ '/home/container/node_modules/@discordjs/opus' ]
+77 silly reify mark retired [ '/home/container/node_modules/@types/node' ]
+78 silly reify moves {
+78 silly reify   '/home/container/node_modules/agent-base': '/home/container/node_modules/.agent-base-hv9OiSsS',
+78 silly reify   '/home/container/node_modules/buffer-from': '/home/container/node_modules/.buffer-from-WQZTNaoC',
+78 silly reify   '/home/container/node_modules/color-support': '/home/container/node_modules/.color-support-5ac2lo4P',
+78 silly reify   '/home/container/node_modules/.bin/color-support': '/home/container/node_modules/.bin/.color-support-ZjgMNEO4',
+78 silly reify   '/home/container/node_modules/concat-stream': '/home/container/node_modules/.concat-stream-HJ2Tz6kf',
+78 silly reify   '/home/container/node_modules/discord-music-system': '/home/container/node_modules/.discord-music-system-19anpjXi',
+78 silly reify   '/home/container/node_modules/encoding': '/home/container/node_modules/.encoding-SKLHu8ks',
+78 silly reify   '/home/container/node_modules/env-paths': '/home/container/node_modules/.env-paths-wXdkt7XZ',
+78 silly reify   '/home/container/node_modules/ffmpeg-static': '/home/container/node_modules/.ffmpeg-static-i8Eb2Whz',
+78 silly reify   '/home/container/node_modules/he': '/home/container/node_modules/.he-qJpE43je',
+78 silly reify   '/home/container/node_modules/.bin/he': '/home/container/node_modules/.bin/.he-JQhKwLOu',
+78 silly reify   '/home/container/node_modules/html-to-text': '/home/container/node_modules/.html-to-text-OceBFvs7',
+78 silly reify   '/home/container/node_modules/.bin/html-to-text': '/home/container/node_modules/.bin/.html-to-text-8fVtPQJY',
+78 silly reify   '/home/container/node_modules/http-response-object': '/home/container/node_modules/.http-response-object-ozLQyyHg',
+78 silly reify   '/home/container/node_modules/https-proxy-agent': '/home/container/node_modules/.https-proxy-agent-BeHdaGM0',
+78 silly reify   '/home/container/node_modules/lyrics-finder': '/home/container/node_modules/.lyrics-finder-yHPrrVuR',
+78 silly reify   '/home/container/node_modules/.bin/lyrics-finder': '/home/container/node_modules/.bin/.lyrics-finder-5Lxwh0ba',
+78 silly reify   '/home/container/node_modules/make-dir': '/home/container/node_modules/.make-dir-BePFhKPE',
+78 silly reify   '/home/container/node_modules/node-addon-api': '/home/container/node_modules/.node-addon-api-PE5ZbsnT',
+78 silly reify   '/home/container/node_modules/parse-cache-control': '/home/container/node_modules/.parse-cache-control-c9U6Luz3',
+78 silly reify   '/home/container/node_modules/popyt': '/home/container/node_modules/.popyt-rfwbr8ov',
+78 silly reify   '/home/container/node_modules/prism-media': '/home/container/node_modules/.prism-media-8ANm9Hg1',
+78 silly reify   '/home/container/node_modules/progress': '/home/container/node_modules/.progress-EGnx9pSD',
+78 silly reify   '/home/container/node_modules/tr46': '/home/container/node_modules/.tr46-Ln7y36ZM',
+78 silly reify   '/home/container/node_modules/typedarray': '/home/container/node_modules/.typedarray-eMXm8km3',
+78 silly reify   '/home/container/node_modules/webidl-conversions': '/home/container/node_modules/.webidl-conversions-SkYV6pUY',
+78 silly reify   '/home/container/node_modules/whatwg-url': '/home/container/node_modules/.whatwg-url-rs3slXaJ',
+78 silly reify   '/home/container/node_modules/ytpl': '/home/container/node_modules/.ytpl-I3BY1dSf',
+78 silly reify   '/home/container/node_modules/ytdl-core-discord': '/home/container/node_modules/.ytdl-core-discord-pZQBJHYg',
+78 silly reify   '/home/container/node_modules/@derhuerst/http-basic': '/home/container/node_modules/@derhuerst/.http-basic-VGa2owb6',
+78 silly reify   '/home/container/node_modules/@discordjs/node-pre-gyp': '/home/container/node_modules/@discordjs/.node-pre-gyp-XIiPvC7f',
+78 silly reify   '/home/container/node_modules/.bin/node-pre-gyp': '/home/container/node_modules/.bin/.node-pre-gyp-kQ3Tu57Z',
+78 silly reify   '/home/container/node_modules/@discordjs/opus': '/home/container/node_modules/@discordjs/.opus-6plSX7if',
+78 silly reify   '/home/container/node_modules/@types/node': '/home/container/node_modules/@types/.node-UlGklLSK'
+78 silly reify }
+79 timing reify:rollback:retireShallow Completed in 16ms
+80 timing command:i Completed in 1156ms
+81 verbose stack Error: ENOTEMPTY: directory not empty, rename '/home/container/node_modules/prism-media' -> '/home/container/node_modules/.prism-media-8ANm9Hg1'
+82 verbose cwd /home/container
+83 verbose Linux 4.15.0-162-generic
+84 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "i" "randomstring"
+85 verbose node v14.18.1
+86 verbose npm  v8.1.4
+87 error code ENOTEMPTY
+88 error syscall rename
+89 error path /home/container/node_modules/prism-media
+90 error dest /home/container/node_modules/.prism-media-8ANm9Hg1
+91 error errno -39
+92 error ENOTEMPTY: directory not empty, rename '/home/container/node_modules/prism-media' -> '/home/container/node_modules/.prism-media-8ANm9Hg1'
+93 verbose exit -39
